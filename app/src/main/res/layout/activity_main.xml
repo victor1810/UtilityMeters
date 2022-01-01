@@ -20,16 +20,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
+    <ToggleButton
+        android:id="@+id/flashlightButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
+        android:textSize="24sp"
+        android:text="On/Off Camera LED/ Flashlight Android"
+        android:textOff="On"
+        android:textOn="Off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/flashlight" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +40,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginBottom="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/flashlightButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textMonth">
