@@ -28,8 +28,8 @@
         android:scaleType="fitCenter"
         android:textSize="24sp"
         android:text="On/Off Camera LED/ Flashlight Android"
-        android:textOff="On"
-        android:textOn="Off"
+        android:textOff="@string/on"
+        android:textOn="@string/off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
