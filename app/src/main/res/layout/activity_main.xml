@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_gray"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +15,7 @@
         android:gravity="center"
         android:text="@string/january_2022"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,12 +25,12 @@
         android:id="@+id/flashlightButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="@color/teal_700"
         android:scaleType="fitCenter"
-        android:textSize="24sp"
         android:text="On/Off Camera LED/ Flashlight Android"
         android:textOff="@string/on"
         android:textOn="@string/off"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -46,10 +47,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textMonth">
 
         <LinearLayout
+            android:id="@+id/cwb_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/gray"
             android:orientation="horizontal">
 
             <TextView
@@ -59,22 +62,27 @@
                 android:layout_weight="1"
                 android:background="@color/blue"
                 android:gravity="center"
-                android:text="@string/cold_water_in_the_bathroom"
+                android:text="@string/bathroom"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="28sp" />
 
             <TextView
                 android:id="@+id/text_input_cold_water_bathroom"
                 android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/black"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/hwb_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/gray"
             android:orientation="horizontal">
 
             <TextView
@@ -84,22 +92,27 @@
                 android:layout_weight="1"
                 android:background="@color/red"
                 android:gravity="center"
-                android:text="@string/hot_water_in_the_bathroom"
+                android:text="@string/bathroom"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="28sp" />
 
             <TextView
                 android:id="@+id/text_input_hot_water_bathroom"
                 android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/black"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/cwk_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/gray"
             android:orientation="horizontal">
 
             <TextView
@@ -109,22 +122,27 @@
                 android:layout_weight="1"
                 android:background="@color/blue"
                 android:gravity="center"
-                android:text="@string/cold_water_in_the_kitchen"
+                android:text="@string/kitchen"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="28sp" />
 
             <TextView
                 android:id="@+id/text_input_cold_water_kitchen"
                 android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/black"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/hwk_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/gray"
             android:orientation="horizontal">
 
             <TextView
@@ -134,22 +152,27 @@
                 android:layout_weight="1"
                 android:background="@color/red"
                 android:gravity="center"
-                android:text="@string/hot_water_in_the_kitchen"
+                android:text="@string/kitchen"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="28sp" />
 
             <TextView
                 android:id="@+id/text_input_hot_water_kitchen"
                 android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/black"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/electric_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/gray"
             android:orientation="horizontal">
 
             <TextView
@@ -161,11 +184,14 @@
                 android:gravity="center"
                 android:text="@string/electricity"
                 android:textColor="@color/black"
-                android:textSize="24sp" />
+                android:textSize="28sp" />
 
             <TextView
                 android:id="@+id/text_input_electricity"
                 android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/black"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
         </LinearLayout>

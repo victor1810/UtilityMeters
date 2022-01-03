@@ -8,6 +8,8 @@ import android.hardware.camera2.CameraManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.ToggleButton
 import androidx.appcompat.app.AlertDialog
 
@@ -32,6 +34,23 @@ class MainActivity : AppCompatActivity() {
       }
       toggleButton = findViewById(R.id.flashlightButton)
       toggleButton.setOnCheckedChangeListener { _, isChecked -> switchFlashLight(isChecked) }
+
+      findViewById<LinearLayout>(R.id.cwb_btn).setOnClickListener {
+         findViewById<TextView>(R.id.text_input_cold_water_bathroom).text = "250"
+      }
+      findViewById<LinearLayout>(R.id.hwb_btn).setOnClickListener {
+         findViewById<TextView>(R.id.text_input_hot_water_bathroom).text = "120"
+      }
+      findViewById<LinearLayout>(R.id.cwk_btn).setOnClickListener {
+         findViewById<TextView>(R.id.text_input_cold_water_kitchen).text = "150"
+      }
+      findViewById<LinearLayout>(R.id.hwk_btn).setOnClickListener {
+         findViewById<TextView>(R.id.text_input_hot_water_kitchen).text = "101"
+      }
+      findViewById<LinearLayout>(R.id.electric_btn).setOnClickListener {
+         findViewById<TextView>(R.id.text_input_electricity).text = "20485"
+      }
+
    }
    private fun showNoFlashError() {
       val alert = AlertDialog.Builder(this)

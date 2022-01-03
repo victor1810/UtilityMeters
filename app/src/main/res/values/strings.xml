@@ -1,16 +1,10 @@
 <resources>
     <string name="app_name">Utility meters</string>
-    <string name="cwbr">Cold water in the bathroom</string>
-    <string name="hwbr">Hot water in the bathroom</string>
-    <string name="hwkitchen">Hot water in the kitchen</string>
-    <string name="cwkitchen">Cold water in the kitchen</string>
     <string name="electricity">Electricity</string>
     <string name="january_2022">January 2022</string>
-    <string name="cold_water_in_the_bathroom">Cold water in the bathroom</string>
-    <string name="hot_water_in_the_bathroom">Hot water in the bathroom</string>
-    <string name="hot_water_in_the_kitchen">Hot water in the kitchen</string>
-    <string name="cold_water_in_the_kitchen">Cold water in the kitchen</string>
     <string name="on">On</string>
     <string name="off">Off</string>
     <string name="date">Date</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="kitchen">Kitchen</string>
 </resources>
