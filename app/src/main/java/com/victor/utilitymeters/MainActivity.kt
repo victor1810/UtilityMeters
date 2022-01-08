@@ -12,6 +12,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.ToggleButton
 import androidx.appcompat.app.AlertDialog
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
    private lateinit var cameraManager: CameraManager
@@ -20,6 +22,14 @@ class MainActivity : AppCompatActivity() {
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
       setContentView(R.layout.activity_main)
+
+      val currentDate = findViewById<TextView>(R.id.textDate)
+        fun getCurrentDate(): String {
+            val sdf = SimpleDateFormat("dd MMMM yyyy")
+            return sdf.format(Date())
+        }
+        currentDate.text = getCurrentDate()
+
       title = "KotlinApp"
       val isFlashAvailable = applicationContext.packageManager
       .hasSystemFeature(PackageManager.FEATURE_CAMERA_FRONT)
@@ -36,19 +46,19 @@ class MainActivity : AppCompatActivity() {
       toggleButton.setOnCheckedChangeListener { _, isChecked -> switchFlashLight(isChecked) }
 
       findViewById<LinearLayout>(R.id.cwb_btn).setOnClickListener {
-         findViewById<TextView>(R.id.text_input_cold_water_bathroom).text = "250"
+         findViewById<TextView>(R.id.text_input_cold_water_bathroom).text = ""
       }
       findViewById<LinearLayout>(R.id.hwb_btn).setOnClickListener {
-         findViewById<TextView>(R.id.text_input_hot_water_bathroom).text = "120"
+         findViewById<TextView>(R.id.text_input_hot_water_bathroom).text = ""
       }
       findViewById<LinearLayout>(R.id.cwk_btn).setOnClickListener {
-         findViewById<TextView>(R.id.text_input_cold_water_kitchen).text = "150"
+         findViewById<TextView>(R.id.text_input_cold_water_kitchen).text = ""
       }
       findViewById<LinearLayout>(R.id.hwk_btn).setOnClickListener {
-         findViewById<TextView>(R.id.text_input_hot_water_kitchen).text = "101"
+         findViewById<TextView>(R.id.text_input_hot_water_kitchen).text = ""
       }
       findViewById<LinearLayout>(R.id.electric_btn).setOnClickListener {
-         findViewById<TextView>(R.id.text_input_electricity).text = "20485"
+         findViewById<TextView>(R.id.text_input_electricity).text = ""
       }
 
    }

@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textMonth"
+        android:id="@+id/textDate"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:background="@color/teal_700"
+        android:background="@color/teal_200"
         android:gravity="center"
-        android:text="@string/january_2022"
+        android:text="@string/date"
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:id="@+id/flashlightButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="@color/teal_200"
         android:scaleType="fitCenter"
         android:text="On/Off Camera LED/ Flashlight Android"
         android:textOff="@string/on"
@@ -33,7 +33,10 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate"
+        app:layout_constraintVertical_bias="0.986" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +47,7 @@
         app:layout_constraintBottom_toTopOf="@+id/flashlightButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMonth">
+        app:layout_constraintTop_toBottomOf="@+id/textDate">
 
         <LinearLayout
             android:id="@+id/cwb_btn"
@@ -66,7 +69,7 @@
                 android:textColor="@color/black"
                 android:textSize="28sp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/text_input_cold_water_bathroom"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -96,7 +99,7 @@
                 android:textColor="@color/black"
                 android:textSize="28sp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/text_input_hot_water_bathroom"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -126,7 +129,7 @@
                 android:textColor="@color/black"
                 android:textSize="28sp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/text_input_cold_water_kitchen"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -156,7 +159,7 @@
                 android:textColor="@color/black"
                 android:textSize="28sp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/text_input_hot_water_kitchen"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -186,14 +189,14 @@
                 android:textColor="@color/black"
                 android:textSize="28sp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/text_input_electricity"
                 android:layout_width="0dp"
-                android:gravity="center"
-                android:textSize="28sp"
-                android:textColor="@color/black"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
         </LinearLayout>
 
     </LinearLayout>
