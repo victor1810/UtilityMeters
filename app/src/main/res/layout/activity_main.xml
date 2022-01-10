@@ -21,28 +21,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ToggleButton
-        android:id="@+id/flashlightButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="@color/teal_200"
-        android:scaleType="fitCenter"
-        android:text="On/Off Camera LED/ Flashlight Android"
-        android:textOff="@string/on"
-        android:textOn="@string/off"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDate"
-        app:layout_constraintVertical_bias="0.986" />
-
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/flashlightButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +46,7 @@
                 android:id="@+id/text_cold_water_bathroom"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.75"
                 android:background="@color/blue"
                 android:gravity="center"
                 android:text="@string/bathroom"
@@ -72,11 +56,15 @@
             <EditText
                 android:id="@+id/text_input_cold_water_bathroom"
                 android:layout_width="0dp"
-                android:gravity="center"
-                android:textSize="28sp"
-                android:textColor="@color/black"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:autofillHints="Enter meter reading"
+                android:gravity="center"
+                android:hint="@string/meter_readings"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,7 +80,7 @@
                 android:id="@+id/text_hot_water_bathroom"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.75"
                 android:background="@color/red"
                 android:gravity="center"
                 android:text="@string/bathroom"
@@ -102,11 +90,15 @@
             <EditText
                 android:id="@+id/text_input_hot_water_bathroom"
                 android:layout_width="0dp"
-                android:gravity="center"
-                android:textSize="28sp"
-                android:textColor="@color/black"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:autofillHints="Enter meter reading"
+                android:gravity="center"
+                android:hint="@string/meter_readings"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -122,7 +114,7 @@
                 android:id="@+id/text_cold_water_kitchen"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.75"
                 android:background="@color/blue"
                 android:gravity="center"
                 android:text="@string/kitchen"
@@ -132,11 +124,15 @@
             <EditText
                 android:id="@+id/text_input_cold_water_kitchen"
                 android:layout_width="0dp"
-                android:gravity="center"
-                android:textSize="28sp"
-                android:textColor="@color/black"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:autofillHints="Enter meter reading"
+                android:gravity="center"
+                android:hint="@string/meter_readings"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -152,7 +148,7 @@
                 android:id="@+id/text_hot_water_kitchen"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.75"
                 android:background="@color/red"
                 android:gravity="center"
                 android:text="@string/kitchen"
@@ -162,11 +158,15 @@
             <EditText
                 android:id="@+id/text_input_hot_water_kitchen"
                 android:layout_width="0dp"
-                android:gravity="center"
-                android:textSize="28sp"
-                android:textColor="@color/black"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:autofillHints="Enter meter reading"
+                android:gravity="center"
+                android:hint="@string/meter_readings"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -182,7 +182,7 @@
                 android:id="@+id/text_electricity"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.75"
                 android:background="@color/green"
                 android:gravity="center"
                 android:text="@string/electricity"
@@ -194,11 +194,26 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:autofillHints="Enter meter reading"
                 android:gravity="center"
+                android:hint="@string/meter_readings"
+                android:inputType="number"
                 android:textColor="@color/black"
-                android:textSize="28sp" />
+                android:textSize="28sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/flashlightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Flashlight ON"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
