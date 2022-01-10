@@ -6,7 +6,7 @@ import android.hardware.camera2.CameraManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import java.text.SimpleDateFormat
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
     // Код фонарика ********************************************************************************
     private fun openFlashLight() {
-        val btnLight: Button = findViewById(R.id.flashlightButton)
+        val btnLight: ImageButton = findViewById(R.id.imageButton)
         btnLight.setOnClickListener { openFlashLight() }
         val cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
         val cameraId = cameraManager.cameraIdList[0]
@@ -59,7 +59,6 @@ class MainActivity : AppCompatActivity() {
                     cameraManager.setTorchMode(cameraId, false)
                 }
                 flashLightStatus = true
-                btnLight.text = "Flashlight ON"
 
             } catch (e: CameraAccessException) {
             }
@@ -69,7 +68,6 @@ class MainActivity : AppCompatActivity() {
                     cameraManager.setTorchMode(cameraId, true)
                 }
                 flashLightStatus = false
-                btnLight.text = "Flashlight OFF"
             } catch (e: CameraAccessException) {
             }
         }

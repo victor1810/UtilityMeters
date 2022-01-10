@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textDate"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:background="@color/teal_200"
         android:gravity="center"
         android:text="@string/date"
         android:textColor="@color/black"
@@ -26,9 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/flashlightButton"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDate">
@@ -39,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -73,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -107,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -141,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -175,7 +172,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/gray"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -205,15 +202,16 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/flashlightButton"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
-        android:text="Flashlight ON"
-        android:textSize="20sp"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:srcCompat="@drawable/flashlight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
