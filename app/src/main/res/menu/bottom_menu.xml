@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/item2"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_remove_red_eye_24"
+        android:title="@string/overview" />
+
+    <item
+        android:id="@+id/item3"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_flashlight_on_24"
+        android:title="@string/flashlight" />
+
+</menu>

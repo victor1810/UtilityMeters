@@ -8,4 +8,7 @@
     <string name="bathroom">Bathroom</string>
     <string name="kitchen">Kitchen</string>
     <string name="meter_readings">Meter readings</string>
+    <string name="home">Home</string>
+    <string name="overview">Overview</string>
+    <string name="flashlight">Flashlight</string>
 </resources>
